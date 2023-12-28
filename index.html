@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles.css">
     <title>My To Do List</title>
 </head>
 <body>
     <div>
-            <input id="input-new-task" type="text" placeholder="Escribe tu tarea" autofocus>
-            <input id="input-new-task__definition" type="text" placeholder="Descripción">
-            <button id="btn-input">Agregar tarea</button>
+            <input class="input" id="input-new-task" type="text" placeholder="Escribe tu tarea" autofocus>
+            <input class="input" id="input-new-task__definition" type="text" placeholder="Descripción">
+            <button class="input" id="button-input" onclick="createTask()">Agregar</button>
         <ul id="task-container">
         </ul>
     </div>
