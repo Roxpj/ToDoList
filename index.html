@@ -7,15 +7,18 @@
     <title>My To Do List</title>
 </head>
 <body>
-    <div>
+    <section class="input-container">
             <input class="input" id="input-new-task" type="text" placeholder="Escribe tu tarea" autofocus>
-            <input class="input" id="input-new-task__definition" type="text" placeholder="Descripción">
-            <button class="input" id="button-input" onclick="createTask()">Agregar</button>
-        <ul id="task-container">
+            <input class="input" id="input-new-task__description" type="text" placeholder="Descripción">
+            <button class="input" id="button-input" onclick="addTask()">Agregar</button>
+    </section>
+    <section id="task-container">
+        <h1>My To Do List</h1>
+        <ul>
         </ul>
-    </div>
+    </section>
 
     <script src="src/dom.js"></script>
-    <script src="src/tasks.js"></script>
+    <!-- <script src="src/tasks.js"></script> -->
 </body>
 </html>
