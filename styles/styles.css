@@ -13,9 +13,16 @@ body {
     height: 100vh;
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
-    background: url(), lightgray 50% / cover no-repeat;
+    /* background: #787878; */
+/*     background: url(assets\aubrey-odom-sQWr0Dqzg8M-unsplash.jpg) / cover;
+ */
+ background: url("/assets/aubrey-odom.jpg") no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 
-}
+ }
 
 .input-container {
     display: flex;

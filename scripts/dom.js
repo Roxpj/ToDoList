@@ -94,6 +94,7 @@ function updateTask(task) {
   const taskDescription = taskElement.querySelector(".task-description");
   task.name = taskName.textContent;
   task.Description = taskDescription.textContent;
+  saveTasks();
 }
 function resetInput() {
   inputTask.value = '';
