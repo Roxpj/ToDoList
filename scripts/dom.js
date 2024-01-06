@@ -127,3 +127,15 @@ function loadTasks() {
     console.error("El tipo de tasks es desconocido");
   }
 }
+
+//dark mode
+const darkModeToggleButton = document.querySelector('.toggle');
+
+function toggleDarkMode(ev){
+  if(ev.target.checked){
+      document.body.removeAttribute('class', 'dark-mode');
+  } else {
+      document.body.setAttribute('class', 'dark-mode');
+  }
+}
+darkModeToggleButton.addEventListener('click', toggleDarkMode);

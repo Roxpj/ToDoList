@@ -1,3 +1,5 @@
+@import url(./toggle-darkmode.css);
+@import url(./darkmode.css);
 * {
     padding: 0;
     margin: 0;
@@ -13,16 +15,13 @@ body {
     height: 100vh;
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
-    /* background: #787878; */
-/*     background: url(assets\aubrey-odom-sQWr0Dqzg8M-unsplash.jpg) / cover;
- */
- background: url("/assets/aubrey-odom.jpg") no-repeat center center fixed; 
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+    background: url("/assets/aubrey-odom.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
- }
+}
 
 .input-container {
     display: flex;
@@ -56,9 +55,17 @@ background-size: cover;
     height: 32px;
 }
 
-#input-new-task:focus, #input-new-task__description:focus, #button-input:focus {
-    outline-color: greenyellow;
+*:focus {
+    outline-color: rgb(173, 255, 47);
 }
+
+@-moz-document url-prefix() {
+    *:focus {
+        outline: none !important;
+        box-shadow: 0 0 0 2px rgb(173, 255, 47), 0 0 0 3px rgb(173, 255, 47) !important;
+    }
+}
+
 
 #button-input {
     display: flex;
@@ -69,7 +76,7 @@ background-size: cover;
     gap: 10px;
     background: #F5F5F5;
     cursor: pointer;
-    color: #787878; 
+    color: #787878;
     font-weight: bolder;
 }
 
@@ -102,19 +109,20 @@ h1 {
     flex-wrap: wrap;
     border: 1px solid #F5F5F5;
     background: #FFF;
-    
+
     font-size: 12px;
 }
 
-.checkbox{
+.checkbox {
     appearance: none;
     width: 12px;
-    height: 12px; 
+    height: 12px;
     border: 2px solid #D9D9D9;
 }
+
 .checkbox:checked {
     background: linear-gradient(315deg, rgb(166, 237, 137) 0%, rgb(69, 110, 64) 100%);
-  }
+}
 
 .task-name {
     width: 81%;
@@ -129,8 +137,9 @@ h1 {
 .completed {
     text-decoration: line-through;
 }
+
 .delete {
-    
+
     width: 8px;
     height: 15px;
     cursor: pointer;

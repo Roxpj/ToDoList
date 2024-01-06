@@ -7,11 +7,20 @@
     <title>My To Do List</title>
 </head>
 <body>
+    <div class="toggle">
+    <div class="toggle-switch">
+        <label class="switch-label">
+          <input type="checkbox" class="toggle-checkbox">
+          <span class="slider"></span>
+        </label>
+    </div> 
+    </div> 
     <section class="input-container">
             <input class="input" id="input-new-task" type="text" placeholder="Escribe tu tarea" autofocus>
             <input class="input" id="input-new-task__description" type="text" placeholder="Descripción">
             <button class="input" id="button-input" onclick="addTask()">Agregar</button>
     </section>
+
     <section id="task-container">
         <h1>My To Do List</h1>
         <ul>

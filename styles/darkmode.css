@@ -1,0 +1,61 @@
+body.dark-mode{
+    background: url(/assets/guille-pozzi.jpg) center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.input.dark.mode::placeholder {
+    color: #d71818;
+}
+
+#input-new-task {
+}
+
+#input-new-task__description {
+}
+
+*:focus {
+    outline-color: rgb(173, 255, 47);
+}
+
+@-moz-document url-prefix() {
+    *:focus {
+        outline: none !important;
+        box-shadow: 0 0 0 2px rgb(173, 255, 47), 0 0 0 3px rgb(173, 255, 47) !important;
+    }
+}
+
+#button-input {
+    background: #F5F5F5;
+    color: #787878;
+}
+
+#task-container {
+    background: #FFF;
+}
+
+h1 {
+}
+
+.new-task {
+    border: 1px solid #F5F5F5;
+    background: #FFF;
+}
+
+.checkbox {
+    border: 2px solid #D9D9D9;
+}
+
+.checkbox:checked {
+    background: linear-gradient(315deg, rgb(166, 237, 137) 0%, rgb(69, 110, 64) 100%);
+}
+
+.task-name {
+}
+
+.task-description {
+}
+
+.delete {
+}
