@@ -1,7 +1,7 @@
 //DOM
 const inputTask = document.querySelector("#input-new-task");
 const inputTaskDescription = document.querySelector("#input-new-task__description");
-const tasksContainer = document.querySelector("#task-container");
+const tasksContainer = document.querySelector("#task-container-list");
 //carga tasks de la memoria
 const tasks = JSON.parse(localStorage.getItem('tasks')) || [];
 document.addEventListener("DOMContentLoaded", loadTasks);

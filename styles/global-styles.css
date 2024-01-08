@@ -1,5 +1,6 @@
 @import url(./toggle-darkmode.css);
-@import url(./darkmode.css);
+@import url(./dark-mode.css);
+
 * {
     padding: 0;
     margin: 0;
@@ -65,7 +66,6 @@ body {
         box-shadow: 0 0 0 2px rgb(173, 255, 47), 0 0 0 3px rgb(173, 255, 47) !important;
     }
 }
-
 
 #button-input {
     display: flex;
@@ -136,6 +136,7 @@ p{
 
 .task-description {
     font-weight: lighter;
+    text-align: justify;
 }
 
 .completed {
@@ -143,7 +144,6 @@ p{
 }
 
 .delete {
-
     width: 8px;
     height: 15px;
     cursor: pointer;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/global-styles.css">
     <title>My To Do List</title>
 </head>
 <body>
@@ -14,14 +14,14 @@
         </label>
     </div> 
     <section class="input-container">
-            <input class="input" id="input-new-task" type="text" placeholder="Escribe tu tarea" maxlength="20" autofocus>
-            <input class="input" id="input-new-task__description" type="text" maxlength="28" placeholder="Descripción">
+            <input class="input" id="input-new-task" type="text" placeholder="Escribe tu tarea" autofocus>
+            <input class="input" id="input-new-task__description" type="text" placeholder="Descripción">
             <button class="input" id="button-input" onclick="addTask()">Agregar</button>
     </section>
 
     <section id="task-container">
         <h1>My To Do List</h1>
-        <ul>
+        <ul id="task-container-list">
         </ul>
     </section>
 <p class="credits" id="credit-light-mode">Foto de <a href="https://unsplash.com/es/@octoberroses?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aubrey Odom</a> en <a href="https://unsplash.com/es/fotos/cactus-verde-sQWr0Dqzg8M?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>  
