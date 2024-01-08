@@ -98,6 +98,11 @@ h1 {
     text-transform: uppercase;
 }
 
+p{
+    font-size: smaller;
+    display: none;
+}
+
 .new-task {
     list-style: none;
     display: flex;
@@ -146,3 +151,14 @@ h1 {
     border: none;
     text-decoration: none;
 }
+
+@media screen and (min-width: 768px) {
+    .input-container {
+        flex-direction: row;
+    }
+    #button-input{
+        display: inline-flex; 
+        height: 32px;
+        width: auto;
+    }
+ }

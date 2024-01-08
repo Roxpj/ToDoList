@@ -8,16 +8,14 @@
 </head>
 <body>
     <div class="toggle">
-    <div class="toggle-switch">
-        <label class="switch-label">
-          <input type="checkbox" class="toggle-checkbox">
-          <span class="slider"></span>
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
         </label>
     </div> 
-    </div> 
     <section class="input-container">
-            <input class="input" id="input-new-task" type="text" placeholder="Escribe tu tarea" autofocus>
-            <input class="input" id="input-new-task__description" type="text" placeholder="Descripción">
+            <input class="input" id="input-new-task" type="text" placeholder="Escribe tu tarea" maxlength="20" autofocus>
+            <input class="input" id="input-new-task__description" type="text" maxlength="28" placeholder="Descripción">
             <button class="input" id="button-input" onclick="addTask()">Agregar</button>
     </section>
 
@@ -26,7 +24,8 @@
         <ul>
         </ul>
     </section>
-    
+<p class="credits" id="credit-light-mode">Foto de <a href="https://unsplash.com/es/@octoberroses?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aubrey Odom</a> en <a href="https://unsplash.com/es/fotos/cactus-verde-sQWr0Dqzg8M?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>  
+<p class="credits" id="credit-dark-mode">Foto de <a href="https://unsplash.com/es/@guillepozzi?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Guille Pozzi</a> en <a href="https://unsplash.com/es/fotos/foto-de-paisaje-de-montanas-bajo-cielo-estrellado-durante-la-noche-SHcHVFhz7-M?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a></p>
 <script src="scripts/dom.js"></script>
 </body>
 </html>
