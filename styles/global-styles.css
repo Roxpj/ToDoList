@@ -22,6 +22,11 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+p{
+    font-size: smaller;
+    display: none;
+    color:darkgrey;
+}
 
 *:focus {
     outline-color: rgb(173, 255, 47);
@@ -94,10 +99,6 @@ h1 {
     font-size: 12px;
     font-weight: bolder;
     text-transform: uppercase;
-}
-p{
-    font-size: smaller;
-    display: none;
 }
 .new-task {
     list-style: none;
