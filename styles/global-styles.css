@@ -108,8 +108,8 @@ p{
     display: flex;
     width: 209px;
     padding: 14px 10px;
-    align-items: flex-start;
-    align-content: flex-start;
+    align-items:flex-start;
+    align-content:flex-start;
     gap: 7px;
     flex-wrap: wrap;
     border: 1px solid #F5F5F5;
@@ -125,7 +125,14 @@ p{
 }
 
 .checkbox:checked {
-    background: linear-gradient(315deg, rgb(166, 237, 137) 0%, rgb(69, 110, 64) 100%);
+background: linear-gradient(315deg, rgb(166, 237, 137) 0%, rgb(69, 110, 64) 100%);
+/* modo check con ilustración
+background-image: url(/assets/checkbox1.png);
+background-size: contain;
+border: none;
+height: 17px;
+width: 17px;
+position: absolute; */
 }
 
 .task-name {

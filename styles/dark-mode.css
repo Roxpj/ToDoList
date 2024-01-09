@@ -46,7 +46,14 @@ body.dark-mode{
 }
 
 .checkbox.dark-mode:checked {
-    background: #6B8CE1;
+    background-color: #6B8CE1;
+    
+/*modo check con ilustración
+    background-image: url(/assets/checkbox3.png);
+    background-size: contain;
+    border: none;
+    height: 16px;
+    width: 16px; */
 }
 
 .delete.dark-mode {
