@@ -1,12 +1,12 @@
 @import url(./toggle-darkmode.css);
 @import url(./dark-mode.css);
 
+/* general */
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 body {
     display: flex;
     padding: 60px 65px;
@@ -21,39 +21,6 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
-}
-
-.input-container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 13px;
-}
-
-.input {
-    height: 45px;
-    font-size: 15px;
-    border: none;
-    padding: 12px;
-    font-weight: 500;
-    font-size: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.input::placeholder {
-    color: #D9D9D9;
-}
-
-#input-new-task {
-    width: 211px;
-    height: 32px;
-}
-
-#input-new-task__description {
-    width: 211px;
-    height: 32px;
 }
 
 *:focus {
@@ -67,6 +34,34 @@ body {
     }
 }
 
+/*sección input */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+}
+.input {
+    height: 45px;
+    font-size: 15px;
+    border: none;
+    padding: 12px;
+    font-weight: 500;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.input::placeholder {
+    color: #D9D9D9;
+}
+#input-new-task {
+    width: 211px;
+    height: 32px;
+}
+#input-new-task__description {
+    width: 211px;
+    height: 32px;
+}
 #button-input {
     display: flex;
     width: 211px;
@@ -79,7 +74,7 @@ body {
     color: #787878;
     font-weight: bolder;
 }
-
+/*sección tasks */
 #task-container {
     display: flex;
     width: 229px;
@@ -90,19 +85,20 @@ body {
     gap: 10px;
     background: #FFF;
 }
-
+#task-container-list{
+    display: flex;
+    flex-direction: column;
+}
 h1 {
     text-align: center;
     font-size: 12px;
     font-weight: bolder;
     text-transform: uppercase;
 }
-
 p{
     font-size: smaller;
     display: none;
 }
-
 .new-task {
     list-style: none;
     display: flex;
@@ -116,18 +112,17 @@ p{
     background: #FFF;
     font-size: 12px;
 }
-
 .checkbox {
     appearance: none;
     width: 12px;
     height: 12px;
     border: 2px solid #D9D9D9;
+    cursor: pointer;
 }
-
 .checkbox:checked {
 background: linear-gradient(315deg, rgb(166, 237, 137) 0%, rgb(69, 110, 64) 100%);
-/* modo check con ilustración
-background-image: url(/assets/checkbox1.png);
+
+/* background-image: url(/assets/checkbox1.png);
 background-size: contain;
 border: none;
 height: 17px;
@@ -140,16 +135,14 @@ position: absolute; */
     font-weight: bold;
     text-transform: uppercase;
 }
-
 .task-description {
     font-weight: lighter;
     text-align: justify;
 }
-
 .completed {
     text-decoration: line-through;
+    order: 2;
 }
-
 .delete {
     width: 8px;
     height: 15px;
@@ -158,7 +151,7 @@ position: absolute; */
     border: none;
     text-decoration: none;
 }
-
+/* responsive */
 @media screen and (min-width: 768px) {
     .input-container {
         flex-direction: row;

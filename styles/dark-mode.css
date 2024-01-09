@@ -5,10 +5,10 @@ body.dark-mode{
     -o-background-size: cover;
     background-size: cover;
 }
+
 .input.dark-mode::placeholder {
     color: #787878; 
 }
-
 .input.dark-mode{
     background: #000;
     color: #FFF;
@@ -17,7 +17,6 @@ body.dark-mode{
 .dark-mode:focus {
     outline-color: #6B8CE1;
 }
-
 @-moz-document url-prefix() {
     .dark-mode:focus {
         outline: none !important;
