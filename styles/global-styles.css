@@ -16,7 +16,7 @@ body {
     height: 100vh;
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
-    background: url("/assets/aubrey-odom.jpg") no-repeat center center fixed;
+    background: url("aubrey-odom.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
