@@ -1,25 +1,22 @@
-# MyToDoList
+# [MyToDoList](https://roxpj.github.io/ToDoList/)
 ***
 Esta es una pequeña aplicación para gestionar las tareas pendientes del día a día, donde puedes añadirlas, marcarlas como completas, editarlas y borrarlas cuando sea necesario. También dispone de modo oscuro.
-***
 
 ## Índice
 
-1. [Tecnologías](#technologies)
-2. [Instalación](#installation)
-3. [Uso](#usage)
-4. [Colaboración](#collaboration)
-5. [Preguntas Frecuentes](#faqs)
-6. [Autores](#authors)
+1. [Tecnologías](#tecnologías)
+2. [Instalación](#instalación)
+3. [Uso](#uso)
+4. [Colaboración](#colaboración)
+5. [Preguntas Frecuentes](#preguntas-frecuentes)
+6. [Autores](#autores)
 
-***
 ## Tecnologías
 Este proyecto utiliza únicamente HTML, CSS y Javascript. Hace uso de localStorage para la persistencia de datos.
 
-***
 ## Instalación
+Para usar la aplicación abre este [enlace](https://roxpj.github.io/ToDoList/) en tu navegador.
 
-***
 ## Uso
 Puedes acceder a tu lista de tareas desde el móvil o el ordenador. En la parte superior derecha se encuentra un botón para activar y desactivar el modo oscuro.
 Al acceder a la página puedes empezar a escribir el título de la tarea que quieras añadir, puedes incluir una descripción de la tarea, pero no es necesario. Sin embargo sí es necesario que haya un título para que la tarea se pueda guardar. Para guardar y visualizar tu nueva tarea pulsa el botón "Agregar".
@@ -27,7 +24,6 @@ Para marcar una tarea como completada, haz click sobre su casilla, está cambiar
 Para modificar el nombre o descripción de una tarea, pincha sobre el área que quieras modificar y escribe, estos cambios se guardarán automáticamente.
 Para eliminar una tarea, pulsa sobre la equis de esa tarea y esta desaparecerá. Ten en cuenta que no se pueden recuperar las tareas eliminadas.
 
-***
 ## Colaboración
 
 ¡Gracias por considerar contribuir al proyecto! Aquí hay algunas directrices generales que te ayudarán a enviar tus contribuciones de manera efectiva:
@@ -45,9 +41,8 @@ Para eliminar una tarea, pulsa sobre la equis de esa tarea y esta desaparecerá.
 
 4. **Pruebas**: Antes de enviar tus cambios, asegúrate de que todas las pruebas pasen. Si has añadido nuevas características, también debes escribir pruebas para ellas.
 
-***
 ## Preguntas Frecuentes
 
-***
+
 ## Autores
  - Roxana Paredes - [Roxpj](https://github.com/Roxpj)
